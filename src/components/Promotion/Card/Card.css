@@ -1,0 +1,89 @@
+.promotion-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 7px 0 rgb(0, 0, 0, 0.15);
+  border: 1px solid #c3c3c3;
+  display: flex;
+  padding: 15px;
+  align-items: flex-start;
+}
+
+.promotion-card__img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.promotion-card__title {
+  width: 50%;
+  font-size: 20px;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion-card__info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.promotion-card__price span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #3498db;
+}
+
+.promotion-card__comments {
+  color: #95a5a6;
+  font-weight: 700;
+}
+
+.promotion-card__link {
+  width: 60%;
+  margin: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.edit {
+  border: 1px solid #3498db;
+  color: #3498db;
+}
+
+.edit:hover {
+  border: 1px solid #eceef0;
+  color: #eff1f3;
+  background-color: #3498db;
+}
+
+.delete {
+  border: 1px solid #e23a3a;
+  color: #e23a3a;
+}
+
+.delete:hover {
+  border: 1px solid #eceef0;
+  color: #eff1f3;
+  background-color: #e23a3a;
+}
+
+.promotion-card__edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion-card__history {
+  width: 60%;
+  margin-top: 3px;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 5px 5;
+  text-align: center;
+  border: 1px solid #3498db;
+  color: #2c3e50;
+}

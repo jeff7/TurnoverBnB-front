@@ -1,0 +1,10 @@
+.History-List__content {
+  border: 2px solid #3498db;
+  margin: 10px 2px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.History-List__content h2 {
+  color: #2a79ad;
+}
