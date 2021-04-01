@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import useApi from "components/utils/useApi";
 import { Link } from "react-router-dom";
-
-import "./Search.css";
 import PromotionList from "../List/List";
 
+import "./Search.css";
+
 const PromotionSearch = () => {
-  const [Search, setSearch] = useState("");
   const [load, loadInfo] = useApi({
     url: "/product",
     method: "get",
@@ -19,7 +18,7 @@ const PromotionSearch = () => {
   return (
     <div className="promotion-search">
       <header className="promotion-search__header">
-        <h1>Promo Show</h1>
+        <h1>Product Show</h1>
         <Link className="promotion-search__header_link" to="/create">
           New
         </Link>

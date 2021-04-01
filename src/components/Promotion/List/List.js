@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-
 import PromotionCard from "../Card/Card";
-import "./List.css";
 import PromotionModal from "../Modal/Modal";
 import useApi from "components/utils/useApi";
+
+import "./List.css";
 
 const PromotionList = ({ loading, promotions, error, refetch }) => {
   const [values, setValues] = useState(null);
@@ -26,15 +26,15 @@ const PromotionList = ({ loading, promotions, error, refetch }) => {
   }, [values]);
 
   if (loading || !promotions) {
-    return <div>Carregando ...</div>;
+    return <div>Loading ...</div>;
   }
 
   if (!promotions.length) {
-    return <div>Nenhum resultado encontrado ...</div>;
+    return <div>No Products Found ...</div>;
   }
 
   if (error) {
-    return <div>Erro encontado...</div>;
+    return <div>Error ...</div>;
   }
 
   return (

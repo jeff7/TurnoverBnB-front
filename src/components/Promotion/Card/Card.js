@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BiTrash } from "react-icons/bi";
+
 import "./Card.css";
 
 const PromotionCard = ({ promotion, onClickHistory, onClickDelete }) => {

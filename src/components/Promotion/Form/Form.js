@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useApi from "components/utils/useApi";
-
 import { useHistory } from "react-router-dom";
-import axios from "axios";
+
 import "./Form.css";
 
 const initialState = {
@@ -21,7 +20,7 @@ const PromotionForm = ({ id }) => {
     },
   });
 
-  const [save, saveInfo] = useApi({
+  const [save] = useApi({
     url: id ? `/product/${id}` : "/product",
     method: id ? "put" : "post",
     data: values,
@@ -48,13 +47,13 @@ const PromotionForm = ({ id }) => {
   }
 
   if (!values) {
-    return <div>Carregando ...</div>;
+    return <div>Loading ...</div>;
   }
 
   return (
     <div className="promotion-form">
-      <h1>Promo Show</h1>
-      {!id ? <h2> Nova Promoção </h2> : <h2> Editar Promoçao </h2>}
+      <h1>Product Show</h1>
+      {!id ? <h2> New Product </h2> : <h2> Edit Promoçao </h2>}
 
       <form onSubmit={onSubmit}>
         <div className="promotion-form__group">
@@ -88,7 +87,7 @@ const PromotionForm = ({ id }) => {
           />
         </div>
         <div className="promotion-form__button">
-          <button type="submit">Salvar</button>
+          <button type="submit">Save</button>
         </div>
       </form>
     </div>
